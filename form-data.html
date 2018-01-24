@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>APLIKASI PENGARSIPAN SURAT MASUK DAN SURAT KELUAR</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Dashboard -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="css/plugins/timeline/timeline.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Tables -->
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+      <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">{ LOGO }</a>
+          </div>
+          <!-- /.navbar-header -->
+      </nav>
+      <!-- /.navbar-static-top -->
+
+      <nav class="navbar-default navbar-static-side" role="navigation">
+          <div class="sidebar-collapse">
+              <ul class="nav" id="side-menu">
+                  <li>
+                      <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-envelope fa-fw"></i> SURAT MASUK<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          <li>
+                              <a href="flot.html">Tambah Data</a>
+                          </li>
+                          <li>
+                              <a href="morris.html">Semua Data</a>
+                          </li>
+                      </ul>
+                      <!-- /.nav-second-level -->
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-envelope fa-fw"></i> SURAT KELUAR<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          <li>
+                              <a href="flot.html">Tambah Data</a>
+                          </li>
+                          <li>
+                              <a href="morris.html">Semua Data</a>
+                          </li>
+                      </ul>
+                      <!-- /.nav-second-level -->
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-archive fa-fw"></i> ARSIP/LAPORAN<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          <li>
+                              <a href="flot.html">Surat Masuk</a>
+                          </li>
+                          <li>
+                              <a href="morris.html">Surat Keluar</a>
+                          </li>
+                      </ul>
+                      <!-- /.nav-second-level -->
+                  </li>
+                  <li><a href="#"><i class="fa fa-cog fa-fw"></i> PENGATURAN</a></li>
+                  <li>
+                      <a href="#"><i class="fa fa-user fa-fw"></i> AKUN<span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                          <li>
+                              <a href="flot.html">Semua Akun</a>
+                          </li>
+                          <li>
+                            <a href="#">Keluar</a>
+                          </li>
+                      </ul>
+                      <!-- /.nav-second-level -->
+                  </li>
+              </ul>
+              <!-- /#side-menu -->
+          </div>
+          <!-- /.sidebar-collapse -->
+      </nav>
+      <!-- /.navbar-static-side -->
+
+        <div id="page-wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">FORM DATA <a href="#" class="btn btn-primary">Tambah</a></h3>
+            </div>
+            <!-- /.col-lg-12 -->
+          </div>
+          <!-- /.row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover" id="dataTables">
+                  <thead>
+                    <tr>
+                      <th>NO.</th>
+                      <th>JENIS SURAT</th>
+                      <th>TANGGAL KIRIM</th>
+                      <th>TANGGAL TERIMA</th>
+                      <th>PENGIRIM</th>
+                      <th>PERIHAL</th>
+                      <th>AKSI</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td><a href="#" title="Klik untuk Edit">DINAS</a></td>
+                      <td>30 DESEMBER 2017</td>
+                      <td>10 JANUARI 2018</td>
+                      <td>DISDIK</td>
+                      <td>PENTING</td>
+                      <td><a class="btn btn-danger" href="#">Hapus</a></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td><a href="#" title="Klik untuk Edit">DINAS</a></td>
+                      <td>30 DESEMBER 2017</td>
+                      <td>10 JANUARI 2018</td>
+                      <td>KOPERTIS</td>
+                      <td>BEASISWA</td>
+                      <td><a class="btn btn-danger" href="#">Hapus</a></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td><a href="#" title="Klik untuk Edit">DINAS</a></td>
+                      <td>30 DESEMBER 2017</td>
+                      <td>10 JANUARI 2018</td>
+                      <td>CodePolitan</td>
+                      <td>BEASISWA</td>
+                      <td><a class="btn btn-danger" href="#">Hapus</a></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td><a href="#" title="Klik untuk Edit">DINAS</a></td>
+                      <td>30 DESEMBER 2017</td>
+                      <td>10 JANUARI 2018</td>
+                      <td>DISDIK</td>
+                      <td>BEASISWA</td>
+                      <td><a class="btn btn-danger" href="#">Hapus</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /#wrapper -->
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="js/jquery-1.10.2.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Tables -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Dashboard -->
+    <script src="js/plugins/morris/raphael-2.1.0.min.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="js/sb-admin.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#dataTables").dataTable();
+    });
+    </script>
+</body>
+
+</html>
