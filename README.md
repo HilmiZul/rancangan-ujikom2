@@ -7,7 +7,7 @@ Silahkan berkreasi merancang UI/UX untuk aplikasi Ujikom dengan contoh ini. Cara
 * Buka ```index.html``` dengan web browser (Google Chrome/Firefox)
 
 # Custom
-* Untuk mengubah style pada bootstrap, silakan tambahkan nama class dengan properti tertentu di file ```style.css``` yang ada di folder ```assets/css/```.
-* ```style.css``` berisi class-class untuk kustomisasi bootstrap dan atau style sendiri.
+* Untuk mengubah style pada bootstrap, silakan tambahkan file ```style.css``` dan simpan difolder ```assets/css/```.
+* Tambahkan beberapa class di ```style.css``` untuk kustomisasi bootstrap dan atau style sendiri.
 
 ### Salam Bootstrap!
