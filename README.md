@@ -1,4 +1,4 @@
-# Rancangan Front-End Ujikom
+# Rancangan Front-End Ujikom versi SB Admin
 Silahkan berkreasi merancang UI/UX untuk aplikasi Ujikom dengan contoh ini. Cara instalasi ada dibawah.
 
 # Instalasi
